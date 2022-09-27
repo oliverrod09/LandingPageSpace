@@ -69,6 +69,16 @@
     
 }
 
+.sectionGeneral{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 0;
+    background: rgb(119,2,97);
+    background: linear-gradient(90deg, rgba(119,2,97,0.9178046218487395) 0%, rgba(0,2,34,1) 100%);
+}
+
 .secDos{
     width: 100%;
     display: flex;
@@ -76,8 +86,10 @@
     justify-content: center;
     padding: 3em 0;
     flex-direction: column;
-    background: rgb(34,193,195);
-background: linear-gradient(0deg, rgba(34,193,195,1) 1%, rgba(12,6,31,0.8525121555915721) 48%, rgba(76,67,147,1) 96%);
+    /* background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 1%, rgba(12,6,31,0.8525121555915721) 48%, rgba(76,67,147,1) 96%); */
+    background: rgb(119,2,97);
+    background: linear-gradient(90deg, rgba(119,2,97,0.9178046218487395) 0%, rgba(0,2,34,1) 100%);
 }
 
 .card{
@@ -138,6 +150,47 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 1%, rgba(12,6,31,0.85251215
 
 .card:hover .back{
     transform: perspective(600px)rotateY(360deg);
+}
+
+.secTres{
+    background: rgba(12,6,31);
+}    
+
+.grid{
+    width: 100%;
+    display: grid;
+    grid-row: repeat(1fr, 5);
+    color: #ffffff;
+}
+
+.grid .row{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 1%, rgba(12,6,31,0.8525121555915721) 48%);
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.row img{
+    width: 100%;
+}
+
+.row .titleList{
+    margin: 1em 0 1em;
+}
+
+.contentList p{
+    margin: 2em;
+}
+
+.row .contentList{
+    position: absolute;
+    display: none;
+}
+
+.row:hover .contentList{
+    position: relative;
+    display: block;
 }
 
 
