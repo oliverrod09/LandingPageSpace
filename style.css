@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,600;1,100&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 400px;
+    background: rgb(119,2,97);
+    background: linear-gradient(90deg, rgba(119,2,97,0.9178046218487395) 0%, rgba(0,2,34,1) 100%);
+    color: white;
+}
+
+.navegacion{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px 1px white;
+}
+
+.logo{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.contenido{
+    margin: 3em auto 0;
+    width: 100%;
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title{
+    font-weight: 300;
+    font-size: 3em;
+}
+
+.threed{
+    width: 100%;
+    height: 20em;
+    margin: 2em auto;
+}
+
+.paragraph{
+    width: 90%;
+    margin: 2em auto;
+}
+
+.btnMain{
+    padding: 1em 4em 1em;
+    border: none;
+    border-radius: 1em;
+    color: #ffffff;
+    background: rgb(99,21,102);
+    background: radial-gradient(circle, rgba(99,21,102,1) 0%, rgba(175,204,204,1) 100%);
+    
+}
+
+.secDos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 0;
+    flex-direction: column;
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 1%, rgba(12,6,31,0.8525121555915721) 48%, rgba(76,67,147,1) 96%);
+}
+
+.card{
+    margin: 2em 0;
+    width: 20em;
+    height: 20em;
+    background-color: crimson;
+    border-radius: 2em;
+    overflow: hidden;
+    position: relative;
+}
+
+.card div{
+    position: absolute;
+    backface-visibility: hidden;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    transition: .5s;
+}
+
+.imageCard{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.front{
+    
+    transform: perspective(600px)rotateX(0deg);
+}
+
+.back{
+    padding: 3em 0;
+    transform: perspective(600px)rotateY(180deg);
+}
+
+.back a{
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 1em 4em;
+    border-radius: 0.5em;
+}
+
+.paragraphCard{
+    text-align: center;
+    margin: 3em;
+}
+
+
+.card:hover .front{
+    transform: perspective(600px)rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px)rotateY(360deg);
+}
+
+
+
+
+/* .formulario form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: .5s;
+}
+
+
+
+.register{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.login{
+    transform: perspective(600px) rotateY(180deg);
+} */
+
+
+
+
+
+
+
+
+
+/* .formulario:hover .register{
+    transform: perspective(600px)rotateY(180deg);
+}
+
+.formulario:hover .login{
+    transform: perspective(600px)rotateY(360deg);
+} */
+
+
+
+/* prueba */
+/* 
+.card div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.card .front {
+    background: #288ca0;
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.card .back {
+    background: #682fc4;
+    transform: perspective(500px) rotateY(180deg);
+}
+
+
+.card:hover .front {
+   
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .back {
+   
+    transform: perspective(500px) rotateY(360deg);
+} */

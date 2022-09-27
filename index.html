@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandingPage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navegacion">
+            <a class="logo">LOGO</a>
+        </nav>
+        <div class="contenido">
+            <div class="info">
+                <div>
+                    <h1 class="title">Here go title</h1>
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nesciunt culpa magnam. Aliquam eum mollitia omnis aperiam fugit ad numquam?</p>
+                    <button class="btnMain">Information</button>
+                </div>
+                
+                <model-viewer src="Project_Name.glb" class="threed" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                </model-viewer>
+            </div>
+        </div>
+    </div>
+    <section class="secDos">
+        <div class="card">
+            <div class="front">
+                <img src="img/img1.jpg" class="imageCard" alt="">
+            </div>
+            <div class="back">
+                <h1 class="titleCard">Title</h1>
+                <p class="paragraphCard">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, aliquid?</p>
+                <a href="#">Link</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front">
+                <img src="img/img2.jpg" class="imageCard" alt="">
+            </div>
+            <div class="back">
+                <h1 class="titleCard">Title</h1>
+                <p class="paragraphCard">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, aliquid?</p>
+                <a href="#">Link</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="front">
+                <img src="img/img3.jpg" class="imageCard" alt="">
+            </div>
+            <div class="back">
+                <h1 class="titleCard">Title</h1>
+                <p class="paragraphCard">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, aliquid?</p>
+                <a href="#">Link</a>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</body>
+</html>
