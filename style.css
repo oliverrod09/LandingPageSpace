@@ -102,7 +102,7 @@ body{
     margin: 2em 0;
     width: 20em;
     height: 20em;
-    background-color: crimson;
+    background-color: #000000;
     border-radius: 2em;
     overflow: hidden;
     position: relative;
@@ -117,7 +117,7 @@ body{
     justify-content: space-between;
     flex-direction: column;
     height: 100%;
-    transition: .5s;
+    transition: 1s;
 }
 
 .imageCard{
@@ -165,7 +165,7 @@ body{
     display: grid;
     grid-row: repeat(1fr, 5);
     color: #ffffff;
-
+   
 }
 
 .grid .row{
@@ -193,13 +193,67 @@ body{
 
 .row .contentList{
     position: absolute;
-    display: none;
+    transform: scaleY(0);
 }
+
 
 .row:hover .contentList{
     position: relative;
-    display: block;
+    transform: scaleX(1);
 }
+
+
+.secCuatro{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 2em 0;
+}
+
+.trace{
+    position: relative;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.trace p{
+    margin: 0 1em;
+}
+
+.planet{
+    background-color: #ffffff;
+    width: 20em;
+    height: 20em;
+    box-shadow: -20px 0px 100px #ffffff5b;
+    transition: 2s;
+    border: 1px solid black;
+}
+
+
+
+
+.planet1{
+    border-radius: 0% 100% 100% 0% / 0% 50% 50% 100%;
+    background: rgb(39,39,48);
+    background: linear-gradient(0deg, rgba(39,39,48,1) 35%, rgba(34,44,139,1) 52%, rgba(240,111,9,1) 100%);
+    transition: 1s;
+}
+
+
+.planet2{
+    border-radius: 100% 0% 0% 100% / 50% 100% 0% 50% ;
+    background: rgb(24,70,17);
+    background: linear-gradient(0deg, rgba(24,70,17,1) 20%, rgba(99,134,46,1) 45%, rgba(206,240,9,1) 100%);
+}
+
+
+
+.planet:hover{
+    box-shadow: 20px 0px 50px 4px #9c9c9c;
+}
+
 
 
 footer{
@@ -228,6 +282,12 @@ footer{
     font-size: 1.5em;
     border-radius: 10px;
     box-shadow: 10px 10px 30px 0 #000000;
+    transition: 1s;
+}
+
+.celda:hover h1{
+    box-shadow: 0px 10px 30px 0 #ffffff;
+    color: #ffffff;
 }
 
 .celda a{
@@ -237,7 +297,6 @@ footer{
     color: #ffffff;
     text-decoration: none;
     font-size: 1em;
-    transition: .5s;
     word-wrap: break-word;
 }
 
@@ -249,7 +308,9 @@ footer{
     
     .container{
         height: 100vh;
-        max-height: 50em;
+        max-height: 45em;
+        min-height: 30em;
+        overflow: hidden;
     }
 
     .contenido{
@@ -264,7 +325,8 @@ footer{
         align-items: center;
         justify-content: center;
         flex-direction: row;
-        height: 30em;
+        height: 100%;
+        max-height: 100vh;
     }
 
     .info .textMain,.threed{
@@ -277,6 +339,8 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        padding: 5em 0;
+        height: 30%;
     }
 
     .title{
@@ -304,6 +368,15 @@ footer{
 
     .contentList p{
         font-size: 1.5em;
+    }
+
+
+    .planet{
+        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    }
+
+    .trace{
+        justify-content: space-around;
     }
 
     .footerGrid{
