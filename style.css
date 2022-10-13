@@ -62,6 +62,7 @@ body{
 .paragraph{
     width: 90%;
     margin: 3em auto;
+    text-shadow: -5px 5px 10px #ff26be;
 }
 
 .btnMain{
@@ -281,8 +282,9 @@ footer{
 
 
 .celda a{
-    display: block;
-    width: max-content;
+    display: flex;
+    align-items: center;
+    width:fit-content;
     margin: 1em auto 1em;
     color: #ffffff;
     text-decoration: none;
@@ -292,6 +294,71 @@ footer{
 
 .celda a:hover{
     border-bottom: 1px solid white;
+}
+
+.icon{
+    width: 2em;
+    height: 2em;
+    margin-left:.5em;
+    background-size: contain;
+}
+
+.celda a:hover .icon{
+    animation: temblor .5s linear;
+}
+
+@keyframes temblor {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(45deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-45deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.iconTiktok{
+    background-image: url("img/icons/tiktok.png");
+}
+
+.iconInstagram{
+    background-image: url("img/icons/instagram.png");
+}
+
+.iconTwitter{
+    background-image: url("img/icons/twitter.png");
+}
+
+.iconLinkedin{
+    background-image: url("img/icons/linkedin.png");
+}
+
+.iconEmail{
+    background-image: url("img/icons/mail.png");
+}
+
+.iconGithub{
+    background-image: url("img/icons/github.png");
+}
+
+.iconHtml{
+    background-image: url("img/icons/html.png");
+}
+
+.iconCss{
+    background-image: url("img/icons/css3.png");
+}
+
+.iconModel{
+    background-image: url("img/icons/model.png");
 }
 
 @media screen and (min-width: 800px) {
