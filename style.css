@@ -6,15 +6,14 @@
     font-family: 'Prompt', sans-serif;
 }
 
-body{
-    background: rgb(119,2,97);
-    background: linear-gradient(90deg, rgba(119,2,97,0.9178046218487395) 0%, rgba(0,2,34,1) 100%);
-}
+
 
 .container{
     width: 100%;
     min-height: 400px;
     color: white;
+    background: rgb(74,0,83);
+    background: linear-gradient(0deg, rgba(74,0,83,1) 4%, rgba(100,33,154,1) 47%, rgba(79,10,143,1) 76%);
 }
 
 .navegacion{
@@ -30,6 +29,7 @@ body{
 .logo{
     font-size: 1.5em;
     font-weight: 600;
+    letter-spacing: 0.2em;
 }
 
 .contenido{
@@ -49,7 +49,7 @@ body{
 .title{
     font-size: 3.5em;
     font-weight: 100;
-    text-shadow: -1px 5px 10px #000000, 0 0 10px #ff26be, 0 0 20px #ff26be, 0 0 50px #ff26be;
+    text-shadow: -10px 10px 10px #000000;
 }
 
 .threed{
@@ -62,7 +62,6 @@ body{
 .paragraph{
     width: 90%;
     margin: 3em auto;
-    text-shadow: -5px 5px 10px #ff26be;
 }
 
 .btnMain{
