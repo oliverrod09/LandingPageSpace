@@ -1,3 +1,6 @@
+Tecnologias usadas: Html, css, vectary (model 3d main), visual studio.
+
+imagenes: unsplah.com, pexels.com.
 
 Logos: 
 tik tok, instagram, linkedin, Twitter https://iconscout.com/contributors/uigo 👑 UIGO Design
