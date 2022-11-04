@@ -59,7 +59,7 @@
     background-color: #ffffff;
     border-radius: 10px;
     transform-origin: 0 100%;
-    transition: transform 1s;
+    transition: 1s;
 }
 
 .activeline--1{
