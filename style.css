@@ -7,7 +7,6 @@
 }
 
 
-
 .container{
     width: 100%;
     min-height: 400px;
@@ -96,6 +95,8 @@
     font-size: 1.5em;
     font-weight: 600;
     letter-spacing: 0.2em;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .contenido{
@@ -429,6 +430,106 @@ footer{
     background-image: url("img/icons/model.png");
 }
 
+
+/* page imageday */
+
+.containerDay{
+    padding: 50px 0;
+    height: auto;
+    background: rgb(74,0,83);
+    background: linear-gradient(0deg, rgba(74,0,83,1) 4%, rgba(100,33,154,1) 47%, rgba(79,10,143,1) 76%);
+}
+
+.cardDay{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cardDay:hover .cardTextDay{
+    transform: translateY(700px);
+}
+
+.cardDayImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cardDayImage img{
+    width: 100%;
+    height: 100%;
+}
+
+.cardTextDay{
+    width: 100%;
+    height: 100%;
+    background-color: #000000d2;
+    position: absolute;
+    top:0;
+    left: 0;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+    transition: 0.5s linear;
+}
+
+.cardTitleDay{
+    font-size: 1.5em;
+    flex-wrap: wrap;
+    border-bottom: solid 1px #ffffff;
+}
+
+.cardDescriptionDay{
+    height: 30%;
+    overflow: hidden;
+    padding: 0 70px;
+}
+
+.cardDateDay{
+    border-top: solid 1px #ffffff;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.observacion{
+    width: 90%;
+    height: auto;
+    font-style: italic;
+    color: #ffffff;
+    text-align: center;
+    margin: 30px auto;
+    font-size: .5em;
+}
+
+.textObservacion{
+    margin-bottom: 20px;
+}
+
+.btnEnlace{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 2px;
+    text-decoration: none;
+    color: #ffffff;
+    background: rgb(99,21,102);
+}
+
+.btnEnlace:hover{
+    background-color: rgb(250, 104, 255);
+}
+
 @media screen and (min-width: 800px) {
     
     .container{
@@ -544,6 +645,36 @@ footer{
 
     .textS3 p{
         font-size: 1.5em;
+    }
+
+    /* page imageday */
+    .containerDay{
+        max-height: 1000px;
+    }
+
+    .cardDay{
+        width: 70%;
+        height: 90%;
+        max-height: 85vh;
+    }
+
+    .cardTitleDay{
+        font-size: 3em;
+        flex-wrap: wrap;
+    }
+
+    .cardDateDay{
+        padding-top: 20px;
+    }
+
+    .observacion{
+        width: 90%;
+        height: auto;
+        font-style: italic;
+        color: #ffffff;
+        text-align: center;
+        margin: 30px auto;
+        font-size: 15px;
     }
   }
 
