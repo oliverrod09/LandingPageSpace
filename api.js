@@ -11,8 +11,13 @@
      .then(respuesta => respuesta.json())
      .then(resultado => mostrar(resultado))
  })
- function mostrar({url, title, explanation, date}) {
-     figure.innerHTML = `<img src="${url}" alt="${url}">`;
+ function mostrar({media_type, url, title, explanation, date}) {
+    if (media_type = 'video') {
+        figure.style.backgroundColor = "#000000";
+        figure.innerHTML = `<iframe title="vimeo-player" src="${url}" width="950" height="460" frameborder="0" allowfullscreen></iframe>`;
+    }else{
+        figure.innerHTML = `<img src="${url}" alt="${url}" class="apiImageVideo">`;
+    }
      titulo.innerHTML = title;
      descripcion.innerHTML = explanation;
      fecha.innerHTML = date;
