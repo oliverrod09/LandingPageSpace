@@ -5,7 +5,7 @@
 
 
  window.addEventListener("load", ()=>{
-     const key = (`qnbHFczPfqzWQYyJYjEREFsXcnvipeEdgCREBQld`);
+     const key = (`h2Lks00vxeUkHE8uGnKse1nf7PS0z5mfuNrhg4ag`);
      const ruta = (`https://api.nasa.gov/planetary/apod?api_key=${key}`);
      fetch(ruta)
      .then(respuesta => respuesta.json())
