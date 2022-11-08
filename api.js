@@ -4,13 +4,14 @@
  var fecha = document.querySelector(".cardDateDay");
 
 
- window.addEventListener("load", ()=>{
-     const key = (`qnbHFczPfqzWQYyJYjEREFsXcnvipeEdgCREBQld`);
-     const ruta = (`https://api.nasa.gov/planetary/apod?api_key=${key}`);
-     fetch(ruta)
-     .then(respuesta => respuesta.json())
-     .then(resultado => mostrar(resultado))
- })
+
+
+const key = (`qnbHFczPfqzWQYyJYjEREFsXcnvipeEdgCREBQld`);
+const ruta = (`https://api.nasa.gov/planetary/apod?api_key=${key}`);
+fetch(ruta)
+.then(respuesta => respuesta.json())
+.then(resultado => mostrar(resultado))
+
  function mostrar({media_type, url, title, explanation, date}) {
     titulo.innerHTML = title;
     descripcion.innerHTML = explanation;

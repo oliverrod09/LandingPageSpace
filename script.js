@@ -4,6 +4,12 @@ var lineaUno = document.querySelector(".line--1");
 var lineaDos = document.querySelector(".line--2");
 var lineaTres = document.querySelector(".line--3");
 
+
+  window.addEventListener("load", ()=>{
+    document.querySelector(".loading").classList.toggle("retirarLoading");
+  });
+
+
 hamburguer.addEventListener("click", ()=>{
     menu.classList.toggle('mostrarMenu');
     lineaUno.classList.toggle("activeline--1");
