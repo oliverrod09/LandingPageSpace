@@ -19,7 +19,7 @@
     background-color: #000000;
     z-index: 1000;
     clip-path: circle(141.2% at 100% 0);
-    transition: 2s;
+    transition: clip-path 2s;
 }
 
 .retirarLoading{
