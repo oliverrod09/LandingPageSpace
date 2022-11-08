@@ -21,5 +21,4 @@
     }else if (media_type == `image`) {
         figure.innerHTML = `<img src="${url}" alt="${url}" class="apiImageVideo">`;
     }
-     
  }
